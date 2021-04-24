@@ -20,6 +20,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        findViewById<Button>(R.id.mButton).setOnClickListener{
+            num--
+
+            findViewById<TextView>(R.id.textView).text = num.toString()
+        }
+
 
     }
 }
